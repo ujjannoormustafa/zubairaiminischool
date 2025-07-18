@@ -204,40 +204,77 @@ export default function Component() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-16 bg-gray-50">
+      <section id="about" className="py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">AI-Powered Online Learning Experience</h2>
-              <p className="text-gray-600 mb-6">
-                Our innovative online platform combines artificial intelligence with creative education to provide
-                personalized learning experiences. Students work on real projects, receive instant feedback, and develop
-                skills that prepare them for the digital future.
-              </p>
-              <Button className="bg-purple-600 hover:bg-purple-700">Explore Courses</Button>
-            </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="relative">
-              <div className="bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg p-8 text-white">
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="text-center">
-                    <Laptop className="w-12 h-12 mx-auto mb-2" />
-                    <p className="text-sm">Interactive Lessons</p>
+              <div className="w-full max-w-2xl mx-auto rounded-2xl overflow-hidden shadow-2xl">
+                <Image
+                  src="/about.jpg"
+                  alt="Child exploring AI and digital technology with futuristic interface"
+                  width={800}
+                  height={600}
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+              {/* <div className="absolute -bottom-6 -right-6 w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center shadow-lg">
+                <Zap className="w-10 h-10 text-white" />
+              </div> */}
+            </div>
+            <div className="space-y-8">
+              <div>
+                <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">AI-Powered Online Learning Experience</h2>
+                <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+                  Our innovative online platform combines artificial intelligence with creative education to provide
+                  personalized learning experiences. Students work on real projects, receive instant feedback, and develop
+                  skills that prepare them for the digital future.
+                </p>
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                <div className="flex items-center space-x-4">
+                  <div className="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+                    <Laptop className="w-7 h-7 text-blue-600" />
                   </div>
-                  <div className="text-center">
-                    <Users className="w-12 h-12 mx-auto mb-2" />
-                    <p className="text-sm">Live Sessions</p>
+                  <div>
+                    <h4 className="text-lg font-semibold text-gray-900 mb-1">Interactive Lessons</h4>
+                    <p className="text-gray-600">Hands-on learning experience</p>
                   </div>
-                  <div className="text-center">
-                    <Award className="w-12 h-12 mx-auto mb-2" />
-                    <p className="text-sm">Certificates</p>
+                </div>
+                <div className="flex items-center space-x-4">
+                  <div className="w-14 h-14 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0">
+                    <Users className="w-7 h-7 text-purple-600" />
                   </div>
-                  <div className="text-center">
-                    <Smartphone className="w-12 h-12 mx-auto mb-2" />
-                    <p className="text-sm">Mobile Learning</p>
+                  <div>
+                    <h4 className="text-lg font-semibold text-gray-900 mb-1">Live Sessions</h4>
+                    <p className="text-gray-600">Real-time interaction</p>
+                  </div>
+                </div>
+                <div className="flex items-center space-x-4">
+                  <div className="w-14 h-14 bg-pink-100 rounded-full flex items-center justify-center flex-shrink-0">
+                    <Award className="w-7 h-7 text-pink-600" />
+                  </div>
+                  <div>
+                    <h4 className="text-lg font-semibold text-gray-900 mb-1">Certificates</h4>
+                    <p className="text-gray-600">Recognized achievements</p>
+                  </div>
+                </div>
+                <div className="flex items-center space-x-4">
+                  <div className="w-14 h-14 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
+                    <Smartphone className="w-7 h-7 text-green-600" />
+                  </div>
+                  <div>
+                    <h4 className="text-lg font-semibold text-gray-900 mb-1">Mobile Learning</h4>
+                    <p className="text-gray-600">Learn anywhere, anytime</p>
                   </div>
                 </div>
               </div>
+             
             </div>
+
+             {/* <div className="pt-4">
+                <Button className="bg-purple-600 hover:bg-purple-700 px-8 py-3 text-lg">Explore Courses</Button>
+              </div> */}
+              
           </div>
         </div>
       </section>
@@ -625,3 +662,4 @@ export default function Component() {
     </div>
   )
 }
+
