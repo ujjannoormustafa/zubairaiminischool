@@ -423,7 +423,33 @@ export default function Component() {
                 <Image src="/zubair.jpg" alt="Zubair" width={128} height={128} className="w-full h-full object-cover" />
               </div>
               <h3 className="text-lg font-semibold">Zubair</h3>
-              <p className="text-gray-600">Founder & Graphics Design Expert</p>
+              <p className="text-gray-600">Founder</p>
+            </div>
+            <div className="text-center">
+              <div className="w-32 h-32 rounded-full mx-auto mb-4 overflow-hidden border-4 border-purple-200">
+                <Image
+                  src="/hijab.png"
+                  alt="Hijab"
+                  width={128}
+                  height={128}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h3 className="text-lg font-semibold">Hijab</h3>
+              <p className="text-gray-600">Graphics Design Expert</p>
+            </div>
+            <div className="text-center">
+              <div className="w-32 h-32 rounded-full mx-auto mb-4 overflow-hidden border-4 border-purple-200">
+                <Image
+                  src="/placeholder-user.jpg"
+                  alt="Usman"
+                  width={128}
+                  height={128}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h3 className="text-lg font-semibold">Usman</h3>
+              <p className="text-gray-600">Video Editing Specialist</p>
             </div>
             <div className="text-center">
               <div className="w-32 h-32 rounded-full mx-auto mb-4 overflow-hidden border-4 border-purple-200">
@@ -436,33 +462,7 @@ export default function Component() {
                 />
               </div>
               <h3 className="text-lg font-semibold">Noor Mustafa</h3>
-              <p className="text-gray-600">Video Editing Specialist</p>
-            </div>
-            <div className="text-center">
-              <div className="w-32 h-32 rounded-full mx-auto mb-4 overflow-hidden border-4 border-purple-200">
-                <Image
-                  src="/placeholder.svg?height=128&width=128"
-                  alt="Hijab"
-                  width={128}
-                  height={128}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <h3 className="text-lg font-semibold">Hijab</h3>
-              <p className="text-gray-600">Coding & AI Instructor</p>
-            </div>
-            <div className="text-center">
-              <div className="w-32 h-32 rounded-full mx-auto mb-4 overflow-hidden border-4 border-purple-200">
-                <Image
-                  src="/placeholder.svg?height=128&width=128"
-                  alt="Usman"
-                  width={128}
-                  height={128}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <h3 className="text-lg font-semibold">Usman</h3>
-              <p className="text-gray-600">AI Learning Coordinator</p>
+              <p className="text-gray-600">Coding Instructor</p>
             </div>
           </div>
         </div>
