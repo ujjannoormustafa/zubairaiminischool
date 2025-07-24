@@ -38,8 +38,8 @@ export default function Component() {
   }
 
   const openGoogleForm = () => {
-    // Temporary alert until actual form link is provided
-    alert('📝 Forms will update very soon! \n\nFor now, please contact us via:\n• WhatsApp: +92 312 2238147\n• Email: hello@zubairaimini.school')
+    // Open the Google Form in a new tab
+    window.open('https://docs.google.com/forms/d/e/1FAIpQLSe-MgjT-0Fzni0J7vvEZYQgYa6HoeOnLrfKa1TFfhjInCOsdA/viewform', '_blank')
   }
 
   const handleStartLearning = () => {
@@ -76,6 +76,9 @@ export default function Component() {
               </button>
               <button onClick={() => scrollToSection('projects')} className="text-gray-700 hover:text-purple-600 transition-colors">
                 Projects
+              </button>
+              <button onClick={() => scrollToSection('registration')} className="text-gray-700 hover:text-purple-600 transition-colors">
+                Register
               </button>
               <button onClick={() => scrollToSection('contact')} className="text-gray-700 hover:text-purple-600 transition-colors">
                 Contact
@@ -115,6 +118,9 @@ export default function Component() {
                 </button>
                 <button onClick={() => scrollToSection('projects')} className="block px-3 py-2 text-gray-700 hover:text-purple-600 w-full text-left">
                   Projects
+                </button>
+                <button onClick={() => scrollToSection('registration')} className="block px-3 py-2 text-gray-700 hover:text-purple-600 w-full text-left">
+                  Register
                 </button>
                 <button onClick={() => scrollToSection('contact')} className="block px-3 py-2 text-gray-700 hover:text-purple-600 w-full text-left">
                   Contact
@@ -261,7 +267,7 @@ export default function Component() {
           
           <div className="text-center mt-12">
             <Button 
-              onClick={openGoogleForm}
+              onClick={() => scrollToSection('registration')}
               className="bg-white bg-opacity-90 hover:bg-white text-purple-600 hover:text-purple-700 font-bold px-12 py-6 text-lg rounded-full border-2 border-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
             >
               Get Started
@@ -463,6 +469,48 @@ export default function Component() {
               </div>
               <h3 className="text-lg font-semibold">Noor Mustafa</h3>
               <p className="text-gray-600">Coding Instructor</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Registration Section */}
+      <section id="registration" className="py-24 bg-gradient-to-r from-purple-50 to-pink-50">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">Join Zubair AI Mini School</h2>
+            <p className="text-xl text-gray-600 mb-8 leading-relaxed max-w-3xl mx-auto">
+              Ready to start your child's creative journey? Fill out our registration form below and we'll get back to you soon!
+            </p>
+          </div>
+          
+          <div className="bg-white rounded-2xl shadow-2xl overflow-hidden">
+            <div className="p-8">
+              <div className="text-center mb-8">
+                <h3 className="text-2xl font-semibold text-gray-900 mb-4">Student Registration Form</h3>
+                <p className="text-gray-600">Please fill out all required fields to register your child for our courses</p>
+              </div>
+              
+              <div className="w-full h-[800px] border-0">
+                <iframe
+                  src="https://docs.google.com/forms/d/e/1FAIpQLSe-MgjT-0Fzni0J7vvEZYQgYa6HoeOnLrfKa1TFfhjInCOsdA/viewform?embedded=true"
+                  width="100%"
+                  height="100%"
+                  frameBorder="0"
+                  marginHeight={0}
+                  marginWidth={0}
+                  title="Zubair AI Mini School Registration Form"
+                  className="rounded-lg"
+                >
+                  Loading…
+                </iframe>
+              </div>
+              
+              <div className="text-center mt-8">
+                <p className="text-sm text-gray-500">
+                  Having trouble with the form? <a href="https://wa.me/923122238147" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-700 font-medium">Contact us on WhatsApp</a>
+                </p>
+              </div>
             </div>
           </div>
         </div>
